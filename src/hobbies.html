@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | David KWIZERA Portfolio</title>
+    <title>Hobbies | David KWIZERA Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,9 +12,9 @@
 
     <!-- NAV -->
     <nav>
-        <div class="nav-logo"><img src="profile.jpg" alt="Kade" class="nav-avatar"></div>
+        <div class="nav-logo"><img src="/media/profile.jpg" alt="Kade" class="nav-avatar"></div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="background.html">Background</a></li>
             <li><a href="skills.html">Skills</a></li>
@@ -25,62 +25,74 @@
         <div class="hamburger" id="hamburger">☰</div>
     </nav>
 
-    <!-- CONTACT HERO -->
-    <section id="contact">
+    <!-- HOBBIES HERO -->
+    <section id="hobbies">
         <video class="home-video" autoplay muted loop playsinline>
-            <source src="media/kiaglicity.mp4" type="video/mp4">
+            <source src="/media/kiaglicity.mp4" type="video/mp4">
         </video>
         <div class="home-overlay"></div>
         <div class="home-wrapper">
             <div class="home-content">
-                <h1 class="glitch" data-text="Get In Touch">Get In Touch</h1>
-                <p class="subtitle">Contact &nbsp;|&nbsp; Connect &nbsp;|&nbsp; Collaborate</p>
-                <p class="intro">Let's talk! I'm always open to new opportunities and collaborations.</p>
+                <h1 class="glitch" data-text="My Hobbies">My Hobbies</h1>
+                <p class="subtitle">Interests &nbsp;|&nbsp; Passions &nbsp;|&nbsp; Activities</p>
+                <p class="intro">Beyond coding, here's what makes me tick and fuels my creativity.</p>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT CONTENT -->
+    <!-- HOBBIES CONTENT -->
     <section style="padding: 30px 40px; max-width: 900px; margin: 0 auto;">
         
         <div class="card" style="margin-bottom: 20px;">
-            <h3 style="color: var(--accent); margin-bottom: 12px;">Let's Connect</h3>
-            <p>I'm always open to interesting conversations, collaboration opportunities, and new projects. Whether you have a question, want to discuss technology, or have an exciting opportunity, feel free to reach out.</p>
-            <p>I typically respond within 24 hours and would love to hear from you!</p>
+            <h3 style="color: var(--accent); margin-bottom: 12px;">Beyond the Code</h3>
+            <p>While I'm passionate about technology and programming, I believe in maintaining a balanced lifestyle. My hobbies help me stay creative, sharp, and connected with the world around me. They've also taught me valuable lessons that I apply to my work as a developer.</p>
         </div>
 
-        <div class="card contact-card">
-            <h3 style="color: var(--accent); margin-bottom: 16px;">Send Me a Message</h3>
-            <p>Have a project, opportunity, or just want to say hi? Feel free to reach out — I'm always open to connecting.</p>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <textarea rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-
-        <div class="card" style="margin-top: 20px;">
-            <h3 style="color: var(--accent); margin-bottom: 16px;">Connect on Social Media</h3>
-            <p style="margin-bottom: 16px;">Find me on these platforms for more regular updates:</p>
-            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                <a href="https://github.com/dashboard" target="_blank" style="display: flex; align-items: center; gap: 8px; color: var(--accent); text-decoration: none; padding: 10px 16px; background: var(--card-bg); border-radius: 8px; border: 1px solid var(--accent-dim);">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/feed/" target="_blank" style="display: flex; align-items: center; gap: 8px; color: var(--accent); text-decoration: none; padding: 10px 16px; background: var(--card-bg); border-radius: 8px; border: 1px solid var(--accent-dim);">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://wa.me/+250788950833" target="_blank" style="display: flex; align-items: center; gap: 8px; color: var(--accent); text-decoration: none; padding: 10px 16px; background: var(--card-bg); border-radius: 8px; border: 1px solid var(--accent-dim);">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
+        <div class="hobbies-grid">
+            <div class="hobby-card">
+                <i class="fas fa-book"></i>
+                <span>Reading</span>
+                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Exploring ideas through books on technology, philosophy, and personal development</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-hands-praying"></i>
+                <span>Praying</span>
+                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Finding peace and clarity through spiritual practice</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-music"></i>
+                <span>Singing</span>
+                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Expressing creativity and emotion through music</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-person-walking"></i>
+                <span>Meditation</span>
+                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Building mental clarity and emotional resilience</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-gamepad"></i>
+                <span>Gaming</span>
+                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Enjoying strategic thinking and interactive storytelling</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-futbol"></i>
+                <span>Playing Football</span>
+                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Staying active and enjoying team collaboration</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-lock"></i>
+                <span>Cryptography</span>
+                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Diving deep into security and mathematical puzzles</p>
             </div>
         </div>
 
         <div class="card" style="margin-top: 20px;">
-            <h3 style="color: var(--accent); margin-bottom: 12px;">Response Time</h3>
-            <p>📧 <strong>Email:</strong> I check messages regularly and try to respond within 24 hours.</p>
-            <p>💬 <strong>WhatsApp/Messages:</strong> For urgent matters, WhatsApp is often the quickest way to reach me.</p>
-            <p>🔗 <strong>LinkedIn:</strong> Connect with me for professional networking and opportunities.</p>
+            <h3 style="color: var(--accent); margin-bottom: 12px;">Why These Matter</h3>
+            <p><strong>Reading:</strong> Keeps me updated and inspires new approaches to problem-solving.</p>
+            <p><strong>Spirituality & Meditation:</strong> Helps maintain focus and emotional balance during challenging projects.</p>
+            <p><strong>Music & Creativity:</strong> Enhances creative thinking which directly impacts my coding approach.</p>
+            <p><strong>Sports & Physical Activity:</strong> Maintains health and teaches discipline and teamwork.</p>
+            <p><strong>Cryptography:</strong> Bridges my hobby interests with my professional security knowledge.</p>
         </div>
     </section>
 

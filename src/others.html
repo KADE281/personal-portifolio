@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobbies | David KWIZERA Portfolio</title>
+    <title>Others | David KWIZERA Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,7 +12,7 @@
 
     <!-- NAV -->
     <nav>
-        <div class="nav-logo"><img src="profile.jpg" alt="Kade" class="nav-avatar"></div>
+        <div class="nav-logo"><img src="/media/profile.jpg" alt="Kade" class="nav-avatar"></div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -25,74 +25,56 @@
         <div class="hamburger" id="hamburger">☰</div>
     </nav>
 
-    <!-- HOBBIES HERO -->
-    <section id="hobbies">
+    <!-- OTHERS HERO -->
+    <section id="others">
         <video class="home-video" autoplay muted loop playsinline>
-            <source src="media/kiaglicity.mp4" type="video/mp4">
+            <source src="/media/kiaglicity.mp4" type="video/mp4">
         </video>
         <div class="home-overlay"></div>
         <div class="home-wrapper">
             <div class="home-content">
-                <h1 class="glitch" data-text="My Hobbies">My Hobbies</h1>
-                <p class="subtitle">Interests &nbsp;|&nbsp; Passions &nbsp;|&nbsp; Activities</p>
-                <p class="intro">Beyond coding, here's what makes me tick and fuels my creativity.</p>
+                <h1 class="glitch" data-text="Documents">Documents</h1>
+                <p class="subtitle">CV &nbsp;|&nbsp; Files &nbsp;|&nbsp; Resources</p>
+                <p class="intro">Access my CV, portfolio documents, and other important files.</p>
             </div>
         </div>
     </section>
 
-    <!-- HOBBIES CONTENT -->
+    <!-- OTHERS CONTENT -->
     <section style="padding: 30px 40px; max-width: 900px; margin: 0 auto;">
+        <h2 class="section-title"><span class="prompt"></span> Documents & Portfolio</h2>
         
         <div class="card" style="margin-bottom: 20px;">
-            <h3 style="color: var(--accent); margin-bottom: 12px;">Beyond the Code</h3>
-            <p>While I'm passionate about technology and programming, I believe in maintaining a balanced lifestyle. My hobbies help me stay creative, sharp, and connected with the world around me. They've also taught me valuable lessons that I apply to my work as a developer.</p>
+            <h3 style="color: var(--accent); margin-bottom: 12px;">My Professional Materials</h3>
+            <p>Below you'll find my Curriculum Vitae, cover letters, project documentation, and other professional materials. Feel free to download, review, or preview them directly. These documents provide detailed insights into my educational background, work experience, projects, and qualifications.</p>
         </div>
 
-        <div class="hobbies-grid">
-            <div class="hobby-card">
-                <i class="fas fa-book"></i>
-                <span>Reading</span>
-                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Exploring ideas through books on technology, philosophy, and personal development</p>
+        <div class="card">
+            <h3 style="color: var(--accent); margin-bottom: 16px;">📄 Upload & Browse Documents</h3>
+            <p>Use the buttons below to upload your own documents or add files to this portfolio section. All uploads are viewable with preview and download options.</p>
+            <div style="margin-bottom: 16px; display:flex; flex-wrap:wrap; gap: 10px; align-items: center;">
+                <button id="upload-btn" class="btn btn-outline" type="button">+ Add Files</button>
+                <button id="toggle-preview-btn" class="btn" type="button" style="display:none;">Show Document Preview</button>
             </div>
-            <div class="hobby-card">
-                <i class="fas fa-hands-praying"></i>
-                <span>Praying</span>
-                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Finding peace and clarity through spiritual practice</p>
-            </div>
-            <div class="hobby-card">
-                <i class="fas fa-music"></i>
-                <span>Singing</span>
-                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Expressing creativity and emotion through music</p>
-            </div>
-            <div class="hobby-card">
-                <i class="fas fa-person-walking"></i>
-                <span>Meditation</span>
-                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Building mental clarity and emotional resilience</p>
-            </div>
-            <div class="hobby-card">
-                <i class="fas fa-gamepad"></i>
-                <span>Gaming</span>
-                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Enjoying strategic thinking and interactive storytelling</p>
-            </div>
-            <div class="hobby-card">
-                <i class="fas fa-futbol"></i>
-                <span>Playing Football</span>
-                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Staying active and enjoying team collaboration</p>
-            </div>
-            <div class="hobby-card">
-                <i class="fas fa-lock"></i>
-                <span>Cryptography</span>
-                <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">Diving deep into security and mathematical puzzles</p>
+            <input id="file-upload" type="file" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" multiple style="display:none;" />
+            <p id="file-upload-name" style="color: var(--muted); margin: 10px 0 0;"></p>
+            <div id="selected-files" style="margin-top: 16px;"></div>
+            <div id="cv-preview-container" style="display:none; width:100%; height:600px; border:1px solid var(--accent-dim); border-radius: 12px; overflow:hidden; margin-top:16px; background:var(--bg); display:flex; align-items:center; justify-content:center;">
+                <iframe id="cv-preview" title="File Preview" width="100%" height="100%" style="border:none; display:none;"></iframe>
+                <div id="image-preview" style="display:none; width:100%; height:100%; display:flex; align-items:center; justify-content:center; overflow:auto;"></div>
             </div>
         </div>
 
         <div class="card" style="margin-top: 20px;">
-            <h3 style="color: var(--accent); margin-bottom: 12px;">Why These Matter</h3>
-            <p><strong>Reading:</strong> Keeps me updated and inspires new approaches to problem-solving.</p>
-            <p><strong>Spirituality & Meditation:</strong> Helps maintain focus and emotional balance during challenging projects.</p>
-            <p><strong>Music & Creativity:</strong> Enhances creative thinking which directly impacts my coding approach.</p>
-            <p><strong>Sports & Physical Activity:</strong> Maintains health and teaches discipline and teamwork.</p>
-            <p><strong>Cryptography:</strong> Bridges my hobby interests with my professional security knowledge.</p>
+            <h3 style="color: var(--accent); margin-bottom: 12px;">📋 Accepted File Types</h3>
+            <p>
+                <strong>🎯 Recommended:</strong><br>
+                • PDF files (ideal for CVs and formal documents)<br>
+                • Images (PNG, JPG, JPEG - for project screenshots, certificates)<br>
+                <br>
+                <strong>📝 Supported:</strong><br>
+                • DOC/DOCX files (Microsoft Word documents)
+            </p>
         </div>
     </section>
 
@@ -138,7 +120,7 @@
                     <a href="https://facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
                 <p class="footer-contact">
-                    <i class="fas fa-envelope"></i> ka@mail.com<br>
+                    <i class="fas fa-envelope"></i> kwizerad523@mail.com<br>
                     <i class="fas fa-phone"></i> +250 788 950 833
                 </p>
             </div>
